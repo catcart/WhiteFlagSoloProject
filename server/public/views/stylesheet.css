@@ -1,0 +1,186 @@
+.mainBody {
+    background-image: url(../images/login.jpg);
+    font-family: avenir;
+}
+
+.mainH {
+    background-color: rgba(249, 255, 215, 0.33);
+    border-bottom: solid medium;
+    border-bottom-color: rgba(184, 194, 192, 0.4);
+    height: 150px;
+}
+.mainHello {
+    margin: 450px auto 0 auto;
+    width: 112px;
+    color:rgba(19, 36, 41, 0.67);
+    font-size: 100px;
+    font-weight: 300;
+    }
+.mainA {
+    margin: 95px 0 0 30px;
+    display: block;
+    float: left;
+    padding: 0 20px 0 20px;
+    color: #445588;
+    font-size: 30px;
+    text-decoration: none;
+}
+.mainName {
+    margin: 95px 30px 0 0;
+    float: right;
+    font-family: learning curve pro;
+    font-size: 75px;
+    font-weight: 600;
+}
+
+.faqBody{
+    background-image: url(../images/triangles.jpg);
+    font-family: avenir;
+}
+
+.faqHone {
+    margin: 50px auto 30px auto;
+    display: block;
+    text-align: center;
+    color: #444;
+    font-size: 60px;
+    font-weight: 200;
+}
+.missionStatement {
+    text-align: center;
+    margin: 0 auto;
+    width: 500px;
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: 300;
+}
+.faqDIV {
+    text-align: right;
+    margin: 75px 400px auto auto;
+}
+.faqHtwo {
+    color: rgba(31, 39, 46, 0.76);
+    padding: 10px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+.faqP {
+    margin: -20px auto 20px 610px;
+    font-size: 22px;
+    width: 500px;
+}
+.faqSlow {
+    color: rgba(253, 255, 57, 0.79);
+    text-align: right;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: italic;
+}
+.faqConnect {
+    color: #003366;
+    text-align: right;
+    font-size: 25px;
+    font-weight: 600;
+    font-style: italic;
+}
+.faqRepeat {
+    color: rgba(83, 11, 67, 0.87);
+    text-align: right;
+    font-size: 25px;
+    font-weight: 600;
+    font-style: italic;
+}
+.faqLost {
+    color: rgba(213, 60, 9, 0.87);
+    text-align: right;
+    font-size: 25px;
+    font-weight: 600;
+    font-style: italic;
+}
+.faqBreak {
+    color: #880000;
+    text-align: right;
+    font-size: 25px;
+    font-weight: 600;
+    font-style: italic;
+}
+.faqGood {
+    color: #009926;
+    text-align: right;
+    font-size: 25px;
+    font-weight: 600;
+    font-style: italic;
+}
+.faqA {
+    margin: 0 0 0 800px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+}
+.optionsBody{
+    background-image: url(../images/retro.jpg);
+    font-family: avenir;
+}
+/*.circle {*/
+    /*margin: 75px auto 0 auto;*/
+    /*width: 800px;*/
+    /*height: 800px;*/
+    /*background-color: rgba(255, 247, 238,  0.75);*/
+    /*-moz-border-radius: 400px;*/
+    /*-webkit-border-radius: 400px;*/
+    /*border-radius: 400px;*/
+/*}*/
+.slow {
+    margin: 85px 900px 80px auto;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 201, 54, 0.75);
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    border-radius: 40px;
+}
+.connect {
+    margin: 85px 900px 80px auto;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(33, 129, 150, 0.75);
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    border-radius: 40px;
+}
+.repeat {
+    margin: 85px 900px 80px auto;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(125, 69, 83,  0.75);
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    border-radius: 40px;
+}
+.lost {
+    margin: 85px 900px 80px auto;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(204, 104, 62,  0.75);
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    border-radius: 40px;
+}
+.break {
+    margin: 85px 900px 80px auto;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(134, 20, 20, 0.75);
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    border-radius: 40px;
+}
+.good {
+    margin: 85px 900px 80px auto;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(53, 160, 92, 0.75);
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    border-radius: 40px;
+}

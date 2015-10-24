@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="whiteFlagApp">
+    <head>
+        <meta charset="UTF-8">
+        <title>White Flag</title>
+        <script src="/vendor/angular/angular.min.js"></script>
+        <script src="/vendor/angular-route/angular-route.min.js"></script>
+        <script src="../assets/scripts/client.js"></script>
+        <script src="../assets/scripts/loginController.js"></script>
+        <link rel="stylesheet" href="../views/stylesheet.css">
+        <base href="/">
+
+    </head>
+    <body class="mainBody">
+        <header class="mainH">
+                <a class="mainA" href="/login">sign in</a>
+                <a class="mainA" href="/views/faq.html">explain</a>
+                <div class="mainName">White Flag</div>
+
+        </header>
+        <div id="main">
+            <ng-view>
+
+            </ng-view>
+
+        </div>
+
+        <div class="mainHello">hello</div>
+
+
+    </body>
+</html>
