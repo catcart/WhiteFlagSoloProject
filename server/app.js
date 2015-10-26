@@ -6,10 +6,12 @@ var passport = require('passport');
 var session = require('express-session');
 var localStrategy = require('passport-local').Strategy;
 var mongoose = require('mongoose');
-var index = require('../routes/index');
-var User = require('../models/user');
 
+var User = require('../models/userModel');
+
+//var index = require('../routes/index');
 var routes = require('../routes/index');
+var options = require('../routes/options');
 var users = require('../routes/users');
 var register = require('../routes/register');
 
@@ -30,17 +32,16 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
-//app.use(express.static(path.join(__dirname, './public')));
-app.use('/', index);
+
 
 var server = app.listen(3000, function(){
     var port = server.address().port;
     console.log('listening on port: ' + port);
 });
 
-app.get('/', function(request, response){
-    response.send('This shows up in terminal');
-});
+//app.get('/', function(request, response){
+//    response.send('This shows up in terminal');
+//});
 app.use(session({
     secret: 'secret',
     key: 'user',
@@ -83,6 +84,7 @@ passport.deserializeUser(function(id, callback){
 
 app.use('/', routes);
 app.use('/users', users);
+app.use('/options', options);
 app.use('/register', register);
 
 module.exports = app;

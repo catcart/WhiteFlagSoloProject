@@ -1,18 +1,20 @@
 .mainBody {
     background-image: url(../images/login.jpg);
-    font-family: avenir;
+    font-family: 'Righteous', cursive;
 }
 
 .mainH {
-    background-color: rgba(249, 255, 215, 0.33);
+    font-family: 'Itim', cursive;
+    background-color: rgba(221, 221, 221, 0.40);
     border-bottom: solid medium;
-    border-bottom-color: rgba(184, 194, 192, 0.4);
+    border-bottom-color: rgba(254, 159, 151, .6);
     height: 150px;
 }
 .mainHello {
-    margin: 450px auto 0 auto;
+    margin: 255px auto 0 auto;
     width: 112px;
-    color:rgba(19, 36, 41, 0.67);
+    color: rgba(0, 149, 163, 0.75);
+    font-family: 'Righteous', cursive;
     font-size: 100px;
     font-weight: 300;
     }
@@ -21,7 +23,7 @@
     display: block;
     float: left;
     padding: 0 20px 0 20px;
-    color: #445588;
+    color: rgb(0, 149, 163);
     font-size: 30px;
     text-decoration: none;
 }
@@ -35,7 +37,7 @@
 
 .faqBody{
     background-image: url(../images/triangles.jpg);
-    font-family: avenir;
+    font-family: 'Itim', cursive;
 }
 
 .faqHone {
@@ -50,69 +52,56 @@
     text-align: center;
     margin: 0 auto;
     width: 500px;
-    color: whitesmoke;
+    color: white;
     font-size: 25px;
-    font-weight: 300;
 }
 .faqDIV {
-    text-align: right;
-    margin: 75px 400px auto auto;
+    text-align: center;
+    margin: 0 auto;
 }
 .faqHtwo {
     color: rgba(31, 39, 46, 0.76);
-    padding: 10px;
-    font-size: 30px;
+    margin: 20px auto -15px auto;
+    font-size: 32px;
     text-decoration: underline;
 }
 .faqP {
-    margin: -20px auto 20px 610px;
-    font-size: 22px;
+    margin: -22px auto 0 auto;
+    font-size: 24px;
     width: 500px;
 }
 .faqSlow {
     color: rgba(253, 255, 57, 0.79);
-    text-align: right;
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 28px;
     font-style: italic;
 }
 .faqConnect {
     color: #003366;
-    text-align: right;
-    font-size: 25px;
-    font-weight: 600;
+    font-size: 28px;
     font-style: italic;
 }
 .faqRepeat {
     color: rgba(83, 11, 67, 0.87);
-    text-align: right;
-    font-size: 25px;
-    font-weight: 600;
+    font-size: 28px;
     font-style: italic;
 }
 .faqLost {
     color: rgba(213, 60, 9, 0.87);
-    text-align: right;
-    font-size: 25px;
-    font-weight: 600;
+    font-size: 28px;
     font-style: italic;
 }
 .faqBreak {
     color: #880000;
-    text-align: right;
-    font-size: 25px;
-    font-weight: 600;
+    font-size: 28px;
     font-style: italic;
 }
 .faqGood {
     color: #009926;
-    text-align: right;
-    font-size: 25px;
-    font-weight: 600;
+    font-size: 28px;
     font-style: italic;
 }
 .faqA {
-    margin: 0 0 0 800px;
+    margin: 20px auto 10px auto;
     text-align: center;
     text-decoration: none;
     font-size: 30px;

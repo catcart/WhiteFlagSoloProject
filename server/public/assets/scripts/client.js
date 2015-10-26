@@ -2,8 +2,8 @@ var app = angular.module('whiteFlagApp', ['ngRoute']);
 
 app.config(function($routeProvider, $locationProvider){
     $routeProvider
-        .when('/login', {
-            templateUrl: 'views/login.html',
+        .when('/register', {
+            templateUrl: 'views/register.html',
             controller: 'loginController'
         });
         //.when('/faq', {

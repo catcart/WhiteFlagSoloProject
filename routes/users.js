@@ -7,8 +7,8 @@ router.get('/', function(req, res, next) {
     res.json(req.isAuthenticated());
 });
 
-router.get('/', function(req, res, next) {
-    res.sendFile(path.join(__dirname, '../views/index.html'))
+router.get('/options', function(req, res, next) {
+    res.sendFile(path.join(__dirname, '../views/options.html'))
 });
 
 module.exports = router;

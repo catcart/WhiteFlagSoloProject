@@ -3,27 +3,27 @@
     <head>
         <meta charset="UTF-8">
         <title>White Flag</title>
-        <script src="/vendor/angular/angular.min.js"></script>
-        <script src="/vendor/angular-route/angular-route.min.js"></script>
+        <script src='/vendor/angular/angular.min.js'></script>
+        <script src='/vendor/angular-material/angular-material.min.js'></script>
+        <script src='/vendor/angular-aria/angular-aria.min.js'></script>
+        <script src='/vendor/angular-animate/angular-animate.min.js'></script>
+        <script src='/vendor/angular-route/angular-route.min.js')></script>
         <script src="../assets/scripts/client.js"></script>
         <script src="../assets/scripts/loginController.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Righteous|Itim' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="../views/stylesheet.css">
         <base href="/">
 
     </head>
     <body class="mainBody">
         <header class="mainH">
-                <a class="mainA" href="/login">sign in</a>
-                <a class="mainA" href="/views/faq.html">explain</a>
+            <md-menu>
+                <a class="mainA" href="/views/login.html">login</a>
+                <a class="mainA" href="/views/register.html">register</a>
+                <a class="mainA" href="/views/faq.html">about</a>
                 <div class="mainName">White Flag</div>
-
+            </md-menu>
         </header>
-        <div id="main">
-            <ng-view>
-
-            </ng-view>
-
-        </div>
 
         <div class="mainHello">hello</div>
 
