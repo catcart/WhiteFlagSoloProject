@@ -7,7 +7,7 @@
     font-family: 'Itim', cursive;
     background-color: rgba(221, 221, 221, 0.40);
     border-bottom: solid medium;
-    border-bottom-color: rgba(254, 159, 151, .6);
+    border-bottom-color: rgba(254, 159, 151, .45);
     height: 150px;
 }
 .mainHello {
@@ -22,8 +22,8 @@
     margin: 95px 0 0 30px;
     display: block;
     float: left;
-    padding: 0 20px 0 20px;
-    color: rgb(0, 149, 163);
+    padding: 15px 20px 0 20px;
+    color: rgba(0, 164, 181, 0.81);
     font-size: 30px;
     text-decoration: none;
 }
@@ -34,7 +34,18 @@
     font-size: 75px;
     font-weight: 600;
 }
-
+.regBody {
+    background-image: url(../images/purple.jpg);
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    font-size: 40px;
+}
+.logBody {
+    background-image: url(../images/lightblue.jpg);
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    font-size: 40px;
+}
 .faqBody{
     background-image: url(../images/triangles.jpg);
     font-family: 'Itim', cursive;
@@ -108,8 +119,76 @@
 }
 .optionsBody{
     background-image: url(../images/retro.jpg);
-    font-family: avenir;
+    font-family: 'Itim', cursive;
 }
+.optionsButtons {
+    margin: 60px auto 0 auto;
+    /*text-align: -webkit-center;*/
+    float: right;
+    width: 120px;
+}
+.slow {
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    font-size: 50px;
+    font-family: 'Righteous', cursive;
+    color: rgba(253, 255, 57, 0.7);
+}
+.connect {
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    font-size: 50px;
+    font-family: 'Righteous', cursive;
+    color: rgba(0, 51, 102, 0.7);
+}
+.repeat {
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    font-size: 50px;
+    font-family: 'Righteous', cursive;
+    color: rgba(83, 11, 67, 0.7);
+}
+.lost {
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    font-size: 50px;
+    font-family: 'Righteous', cursive;
+    color: rgba(213, 60, 9, 0.7);
+}
+.break {
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    font-size: 50px;
+    font-family: 'Righteous', cursive;
+    color: rgba(136, 0, 0, 0.7);
+}
+.good {
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    font-size: 50px;
+    font-family: 'Righteous', cursive;
+    color: rgba(0, 153, 38, 0.7);
+}
+.optionsFlag {
+    margin: 40px 30px auto ;
+    height: 400px;
+    width: 600px;
+    float: left;
+    background-color: rgba(221, 221, 221, 0.5);
+}
+
 /*.circle {*/
     /*margin: 75px auto 0 auto;*/
     /*width: 800px;*/
@@ -119,57 +198,57 @@
     /*-webkit-border-radius: 400px;*/
     /*border-radius: 400px;*/
 /*}*/
-.slow {
-    margin: 85px 900px 80px auto;
-    width: 80px;
-    height: 80px;
-    background-color: rgba(255, 201, 54, 0.75);
-    -moz-border-radius: 40px;
-    -webkit-border-radius: 40px;
-    border-radius: 40px;
-}
-.connect {
-    margin: 85px 900px 80px auto;
-    width: 80px;
-    height: 80px;
-    background-color: rgba(33, 129, 150, 0.75);
-    -moz-border-radius: 40px;
-    -webkit-border-radius: 40px;
-    border-radius: 40px;
-}
-.repeat {
-    margin: 85px 900px 80px auto;
-    width: 80px;
-    height: 80px;
-    background-color: rgba(125, 69, 83,  0.75);
-    -moz-border-radius: 40px;
-    -webkit-border-radius: 40px;
-    border-radius: 40px;
-}
-.lost {
-    margin: 85px 900px 80px auto;
-    width: 80px;
-    height: 80px;
-    background-color: rgba(204, 104, 62,  0.75);
-    -moz-border-radius: 40px;
-    -webkit-border-radius: 40px;
-    border-radius: 40px;
-}
-.break {
-    margin: 85px 900px 80px auto;
-    width: 80px;
-    height: 80px;
-    background-color: rgba(134, 20, 20, 0.75);
-    -moz-border-radius: 40px;
-    -webkit-border-radius: 40px;
-    border-radius: 40px;
-}
-.good {
-    margin: 85px 900px 80px auto;
-    width: 80px;
-    height: 80px;
-    background-color: rgba(53, 160, 92, 0.75);
-    -moz-border-radius: 40px;
-    -webkit-border-radius: 40px;
-    border-radius: 40px;
-}
+/*.slow {*/
+    /*margin: 85px 900px 80px auto;*/
+    /*width: 80px;*/
+    /*height: 80px;*/
+    /*background-color: rgba(255, 201, 54, 0.75);*/
+    /*-moz-border-radius: 40px;*/
+    /*-webkit-border-radius: 40px;*/
+    /*border-radius: 40px;*/
+/*}*/
+/*.connect {*/
+    /*margin: 85px 900px 80px auto;*/
+    /*width: 80px;*/
+    /*height: 80px;*/
+    /*background-color: rgba(33, 129, 150, 0.75);*/
+    /*-moz-border-radius: 40px;*/
+    /*-webkit-border-radius: 40px;*/
+    /*border-radius: 40px;*/
+/*}*/
+/*.repeat {*/
+    /*margin: 85px 900px 80px auto;*/
+    /*width: 80px;*/
+    /*height: 80px;*/
+    /*background-color: rgba(125, 69, 83,  0.75);*/
+    /*-moz-border-radius: 40px;*/
+    /*-webkit-border-radius: 40px;*/
+    /*border-radius: 40px;*/
+/*}*/
+/*.lost {*/
+    /*margin: 85px 900px 80px auto;*/
+    /*width: 80px;*/
+    /*height: 80px;*/
+    /*background-color: rgba(204, 104, 62,  0.75);*/
+    /*-moz-border-radius: 40px;*/
+    /*-webkit-border-radius: 40px;*/
+    /*border-radius: 40px;*/
+/*}*/
+/*.break {*/
+    /*margin: 85px 900px 80px auto;*/
+    /*width: 80px;*/
+    /*height: 80px;*/
+    /*background-color: rgba(134, 20, 20, 0.75);*/
+    /*-moz-border-radius: 40px;*/
+    /*-webkit-border-radius: 40px;*/
+    /*border-radius: 40px;*/
+/*}*/
+/*.good {*/
+    /*margin: 85px 900px 80px auto;*/
+    /*width: 80px;*/
+    /*height: 80px;*/
+    /*background-color: rgba(53, 160, 92, 0.75);*/
+    /*-moz-border-radius: 40px;*/
+    /*-webkit-border-radius: 40px;*/
+    /*border-radius: 30px;*/
+/*}*/

@@ -1,37 +1,12 @@
-var mongoose = require('mongoose'),
-    Schema = mongoose.Schema,
-    bcrypt = require('bcrypt'),
-    SALT_WORK_FACTOR = 15;
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
+var passportLocalMongoose = require('passport-local-mongoose');
 
-var UserSchema = new Schema({
-    username: { type: String, require: true, index: { unique:true}},
-    password: { type: String, required: true}
+var ClassSchema = new Schema({
+    username: String,
+    password: String
 });
 
+ClassSchema.plugin(passportLocalMongoose);
 
-UserSchema.pre('save', function(next){
-    var user = this;
-
-    if(!user.isModified('password')) return next();
-
-    bcrypt.genSalt(SALT_WORK_FACTOR, function(err, salt){
-        if(err) return next(err);
-
-        bcrypt.hash(user.password, salt, function(err, hash){
-            if(err) return next(err);
-
-            user.password = hash;
-            next();
-        });
-    });
-});
-
-UserSchema.methods.comparePassword = function(candidatePassword, callback){
-    bcrypt.compare(candidatePassword, this.password, function(err, isMatch){
-        if(err) return callback(err);
-        callback(null, isMatch);
-    });
-};
-
-
-module.exports = mongoose.model('User', UserSchema);
+module.exports = mongoose.model('ClassName', ClassSchema);
