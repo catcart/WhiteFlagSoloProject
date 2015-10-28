@@ -30,19 +30,21 @@
 .mainName {
     margin: 75px 30px 0 0;
     float: right;
+    color: rgba(251, 251, 251, 0.9);
     font-family: learning curve pro;
     font-size: 75px;
     font-weight: 600;
 }
 .regBody {
-    background-image: url(../images/purple.jpg);
+    background-image: url(../images/collection.jpg);
     text-align: center;
     font-family: 'Righteous', cursive;
     font-size: 40px;
 }
 .logBody {
-    background-image: url(../images/lightblue.jpg);
+    background-image: url(../images/bluetri.jpg);
     text-align: center;
+    color: rgba(221, 221, 221, 0.8);
     font-family: 'Righteous', cursive;
     font-size: 40px;
 }
@@ -51,6 +53,7 @@
     border:none;
     margin:0 auto 10px auto;
     padding: 0;
+    color: rgba(10, 211, 240, 0.63);
     font-size: 25px;
     font-family: 'Itim', cursive;
 }
@@ -71,7 +74,7 @@
     height: 45px;
 }
 .faqBody{
-    background-image: url(../images/triangles_lightened.jpg);
+    background-image: url(../images/retro.jpg);
     font-family: 'Itim', cursive;
 }
 
@@ -142,7 +145,7 @@
     font-size: 30px;
 }
 .optionsBody{
-    background-image: url(../images/retro.jpg);
+    background-image: url(../images/hex.jpg);
     font-family: 'Itim', cursive;
 }
 .optionsButtons {

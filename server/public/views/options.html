@@ -1,4 +1,8 @@
+<!Doctype html>
+<html lang="en" ng-app="whiteflag">
 <head>
+    <script src="/vendor/angular/angular.min.js"></script>
+    <script src="../assets/scripts/optionsController.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Righteous|Itim' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../views/stylesheet.css">
 </head>
@@ -8,25 +12,25 @@
 
 </header>
     <body class="optionsBody">
+        <div class="options" ng-controller="optionsController">
+            <div class="optionsFlag">
+                <div ng-hide="divSlow" class="slowBar"></div>
+                <div ng-hide="divConnect" class="connectBar"></div>
+                <div ng-hide="divRepeat" class="repeatBar"></div>
+                <div ng-hide="divLost" class="lostBar"></div>
+                <div ng-hide="divBreak" class="breakBar"></div>
+                <div ng-hide="divGood" class="goodBar"></div>
+            </div>
 
-        <div class="optionsFlag">
-            <div class="slowBar"></div>
-            <div class="connectBar"></div>
-            <div class="repeatBar"></div>
-            <div class="lostBar"></div>
-            <div class="breakBar"></div>
-            <div class="goodBar"></div>
+            <div class="optionsButtons">
+                <button ng-click="opacitySlow()" ng-class="classSlow" class="slow">slow</button>
+                <button ng-click="opacityConnect()" ng-class="classConnect" class="connect">connect</button>
+                <button ng-click="opacityRepeat()" ng-class="classRepeat" class="repeat">repeat</button>
+                <button ng-click="opacityLost()" ng-class="classLost" class="lost">lost</button>
+                <button ng-click="opacityBreak()" ng-class="classBreak" class="break">break</button>
+                <button ng-click="opacityGood()" ng-class="classGood" class="good">good</button>
+            </div>
+
         </div>
-
-        <div class="optionsButtons">
-            <button class="slow">slow</button>
-            <button class="connect">connect</button>
-            <button class="repeat">repeat</button>
-            <button class="lost">lost</button>
-            <button class="break">break</button>
-            <button class="good">good</button>
-        </div>
-<!--<div class="circle"></div>-->
-
-
 </body>
+</html>
