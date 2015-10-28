@@ -8,7 +8,7 @@
     background-color: rgba(221, 221, 221, 0.40);
     border-bottom: solid medium;
     border-bottom-color: rgba(254, 159, 151, .45);
-    height: 150px;
+    height: 130px;
 }
 .mainHello {
     margin: 255px auto 0 auto;
@@ -19,7 +19,7 @@
     font-weight: 300;
     }
 .mainA {
-    margin: 95px 0 0 30px;
+    margin: 80px 0 0 30px;
     display: block;
     float: left;
     padding: 15px 20px 0 20px;
@@ -28,7 +28,7 @@
     text-decoration: none;
 }
 .mainName {
-    margin: 95px 30px 0 0;
+    margin: 75px 30px 0 0;
     float: right;
     font-family: learning curve pro;
     font-size: 75px;
@@ -46,8 +46,32 @@
     font-family: 'Righteous', cursive;
     font-size: 40px;
 }
+.submitButton {
+    background:none;
+    border:none;
+    margin:0 auto 10px auto;
+    padding: 0;
+    font-size: 25px;
+    font-family: 'Itim', cursive;
+}
+.submitForm {
+    text-align: center;
+    margin: 30px auto 15px auto;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 250px;
+    border: none;
+    border-bottom: 2px solid black;
+    background: transparent;
+    font-family: 'Itim', cursive;
+    font-size: 30px;
+    height: 45px;
+}
 .faqBody{
-    background-image: url(../images/triangles.jpg);
+    background-image: url(../images/triangles_lightened.jpg);
     font-family: 'Itim', cursive;
 }
 
@@ -122,7 +146,7 @@
     font-family: 'Itim', cursive;
 }
 .optionsButtons {
-    margin: 60px auto 0 auto;
+    margin: 90px auto 0 auto;
     /*text-align: -webkit-center;*/
     float: right;
     width: 120px;
@@ -130,8 +154,8 @@
 .slow {
     background:none;
     border:none;
-    margin:0;
-    padding:0;
+    margin:0 auto 10px auto;
+    padding: 0;
     font-size: 50px;
     font-family: 'Righteous', cursive;
     color: rgba(253, 255, 57, 0.7);
@@ -139,8 +163,8 @@
 .connect {
     background:none;
     border:none;
-    margin:0;
-    padding:0;
+    margin:0 auto 10px auto;
+    padding: 0;
     font-size: 50px;
     font-family: 'Righteous', cursive;
     color: rgba(0, 51, 102, 0.7);
@@ -148,8 +172,8 @@
 .repeat {
     background:none;
     border:none;
-    margin:0;
-    padding:0;
+    margin:0 auto 10px auto;
+    padding: 0;
     font-size: 50px;
     font-family: 'Righteous', cursive;
     color: rgba(83, 11, 67, 0.7);
@@ -157,8 +181,8 @@
 .lost {
     background:none;
     border:none;
-    margin:0;
-    padding:0;
+    margin:0 auto 10px auto;
+    padding: 0;
     font-size: 50px;
     font-family: 'Righteous', cursive;
     color: rgba(213, 60, 9, 0.7);
@@ -166,8 +190,8 @@
 .break {
     background:none;
     border:none;
-    margin:0;
-    padding:0;
+    margin:0 auto 10px auto;
+    padding: 0;
     font-size: 50px;
     font-family: 'Righteous', cursive;
     color: rgba(136, 0, 0, 0.7);
@@ -175,80 +199,47 @@
 .good {
     background:none;
     border:none;
-    margin:0;
-    padding:0;
+    margin:0 auto 10px auto;
+    padding: 0;
     font-size: 50px;
     font-family: 'Righteous', cursive;
     color: rgba(0, 153, 38, 0.7);
 }
 .optionsFlag {
-    margin: 40px 30px auto ;
-    height: 400px;
+    margin: 90px 30px auto ;
+    height: 420px;
     width: 600px;
     float: left;
     background-color: rgba(221, 221, 221, 0.5);
 }
+.slowBar {
+    background-color: rgba(253, 255, 57, 0.7);
+    height: 70px;
+    width: 600px;
+}
+.connectBar {
+    background-color: rgba(0, 51, 102, 0.7);
+    height: 70px;
+    width: 600px;
 
-/*.circle {*/
-    /*margin: 75px auto 0 auto;*/
-    /*width: 800px;*/
-    /*height: 800px;*/
-    /*background-color: rgba(255, 247, 238,  0.75);*/
-    /*-moz-border-radius: 400px;*/
-    /*-webkit-border-radius: 400px;*/
-    /*border-radius: 400px;*/
-/*}*/
-/*.slow {*/
-    /*margin: 85px 900px 80px auto;*/
-    /*width: 80px;*/
-    /*height: 80px;*/
-    /*background-color: rgba(255, 201, 54, 0.75);*/
-    /*-moz-border-radius: 40px;*/
-    /*-webkit-border-radius: 40px;*/
-    /*border-radius: 40px;*/
-/*}*/
-/*.connect {*/
-    /*margin: 85px 900px 80px auto;*/
-    /*width: 80px;*/
-    /*height: 80px;*/
-    /*background-color: rgba(33, 129, 150, 0.75);*/
-    /*-moz-border-radius: 40px;*/
-    /*-webkit-border-radius: 40px;*/
-    /*border-radius: 40px;*/
-/*}*/
-/*.repeat {*/
-    /*margin: 85px 900px 80px auto;*/
-    /*width: 80px;*/
-    /*height: 80px;*/
-    /*background-color: rgba(125, 69, 83,  0.75);*/
-    /*-moz-border-radius: 40px;*/
-    /*-webkit-border-radius: 40px;*/
-    /*border-radius: 40px;*/
-/*}*/
-/*.lost {*/
-    /*margin: 85px 900px 80px auto;*/
-    /*width: 80px;*/
-    /*height: 80px;*/
-    /*background-color: rgba(204, 104, 62,  0.75);*/
-    /*-moz-border-radius: 40px;*/
-    /*-webkit-border-radius: 40px;*/
-    /*border-radius: 40px;*/
-/*}*/
-/*.break {*/
-    /*margin: 85px 900px 80px auto;*/
-    /*width: 80px;*/
-    /*height: 80px;*/
-    /*background-color: rgba(134, 20, 20, 0.75);*/
-    /*-moz-border-radius: 40px;*/
-    /*-webkit-border-radius: 40px;*/
-    /*border-radius: 40px;*/
-/*}*/
-/*.good {*/
-    /*margin: 85px 900px 80px auto;*/
-    /*width: 80px;*/
-    /*height: 80px;*/
-    /*background-color: rgba(53, 160, 92, 0.75);*/
-    /*-moz-border-radius: 40px;*/
-    /*-webkit-border-radius: 40px;*/
-    /*border-radius: 30px;*/
-/*}*/
+}
+.repeatBar {
+    background-color: rgba(83, 11, 67, 0.7);
+    height: 70px;
+    width: 600px;
+}
+.lostBar {
+    background-color: rgba(213, 60, 9, 0.7);
+    height: 70px;
+    width: 600px;
+}
+.breakBar {
+    background-color: rgba(136, 0, 0, 0.7);
+    height: 70px;
+    width: 600px;
+}
+.goodBar {
+    background-color: rgba(0, 153, 38, 0.7);
+    height: 70px;
+    width: 600px;
+}

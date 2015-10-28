@@ -6,6 +6,7 @@ var passport = require('passport');
 //var session = require('express-session');
 var LocalStrategy = require('passport-local').Strategy;
 var mongoose = require('mongoose');
+//var bootstrap = require('bootstrap');
 
 //var User = require('../models/userModel');
 
