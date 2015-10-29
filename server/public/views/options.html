@@ -6,15 +6,16 @@
     <link href='https://fonts.googleapis.com/css?family=Righteous|Itim' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../views/stylesheet.css">
 </head>
-<header class="mainH">
-    <div class="mainName">White Flag</div>
-    <a class="mainA" href="/logout">sign out</a>
-
-</header>
     <body class="optionsBody">
+
+        <header class="mainH">
+            <div class="mainName">White Flag</div>
+            <a class="mainA" href="/logout">sign out</a>
+        </header>
+
         <div class="options" ng-controller="optionsController">
             <div class="optionsFlag">
-                <div ng-hide="divSlow" class="slowBar"></div>
+                <div ng-hide="divSlow" class="slowBar">{{colorChoice}}</div>
                 <div ng-hide="divConnect" class="connectBar"></div>
                 <div ng-hide="divRepeat" class="repeatBar"></div>
                 <div ng-hide="divLost" class="lostBar"></div>
@@ -23,13 +24,15 @@
             </div>
 
             <div class="optionsButtons">
-                <button ng-click="opacitySlow()" ng-class="classSlow" class="slow">slow</button>
-                <button ng-click="opacityConnect()" ng-class="classConnect" class="connect">connect</button>
-                <button ng-click="opacityRepeat()" ng-class="classRepeat" class="repeat">repeat</button>
-                <button ng-click="opacityLost()" ng-class="classLost" class="lost">lost</button>
-                <button ng-click="opacityBreak()" ng-class="classBreak" class="break">break</button>
-                <button ng-click="opacityGood()" ng-class="classGood" class="good">good</button>
+                <button ng-click="countSlow()" class="slow">slow</button>
+                <button ng-click="countConnect()" class="connect">connect</button>
+                <button ng-click="countRepeat()" class="repeat">repeat</button>
+                <button ng-click="countLost()" class="lost">lost</button>
+                <button ng-click="countBreak()"  class="break">break</button>
+                <button ng-click="countGood()" class="good">good</button>
             </div>
+
+            <!--<button ng-click="clearColor" class="clear">clear</button>-->
 
         </div>
 </body>

@@ -14,6 +14,7 @@ var mongoose = require('mongoose');
 var routes = require('../routes/index');
 var users = require('../routes/users');
 var Class = require('../models/userModel.js');
+var Reactions = require('../models/reactionModel.js');
 
 var app = express();
 
@@ -45,7 +46,7 @@ app.use(passport.session());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-
+app.use('/reactions', Reactions);
 
 var server = app.listen(3000, function(){
     var port = server.address().port;
