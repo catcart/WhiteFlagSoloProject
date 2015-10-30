@@ -8,9 +8,11 @@ var loginUser = path.resolve(__dirname, '../server/public/views/login.html');
 var optionsPage = path.resolve(__dirname, '../server/public/views/options.html');
 
 
-router.post('/addReaction', function(req, res, next){
+router.post('/reactions', function(req, res, next){
     console.log(req.body);
-    Reaction.create(req.body, function(err, post){
-        res.send('all good');
+    reactionSchema.create(req.body, function(err, post){
+        res.send('sent reaction');
     })
 });
+
+module.exports = router;

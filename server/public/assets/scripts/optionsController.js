@@ -89,14 +89,14 @@ app.controller('optionsController', ['$scope', function($scope){
         console.log('clicksGood');
     };
 
-    //$scope.clearColor = function(){
-    //    $scope.divSlow = true;
-    //    $scope.divConnect = true;
-    //    $scope.divRepeat = true;
-    //    $scope.divLost = true;
-    //    $scope.divBreak = true;
-    //    $scope.divGood = true;
-    //};
+    $scope.clearColor = function(){
+        $scope.divSlow = true;
+        $scope.divConnect = true;
+        $scope.divRepeat = true;
+        $scope.divLost = true;
+        $scope.divBreak = true;
+        $scope.divGood = true;
+    };
 
 }]);
 
@@ -185,3 +185,4 @@ app.controller('optionsController', ['$scope', function($scope){
     //
     //};
 
+module.exports = router;

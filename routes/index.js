@@ -50,9 +50,15 @@ router.post('/login', passport.authenticate('local'), function(req, res, next) {
         if (err) {
             return next(err);
         }
-        res.redirect('/options');
+        res.sendFile(optionsPage);
     });
 });
+
+//router.post('/login',
+//    passport.authenticate('local', { successRedirect: 'optionsPage',
+//        failureRedirect: '/login' }));
+
+
 
 router.get('/logout', function(req, res, next) {
     req.logout();

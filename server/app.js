@@ -8,29 +8,26 @@ var LocalStrategy = require('passport-local').Strategy;
 var mongoose = require('mongoose');
 //var bootstrap = require('bootstrap');
 
-//var User = require('../models/userModel');
 
 //var index = require('../routes/index');
+//var users = require('../routes/users');
+
 var routes = require('../routes/index');
-var users = require('../routes/users');
-var Class = require('../models/userModel.js');
-var Reactions = require('../models/reactionModel.js');
+var options = require('../routes/optionsRoute');
 
 var app = express();
 
-mongoose.connect('mongodb://localhost:27017/whiteflag');
-
-//var mongoURI = 'mongodb://localhost:27017/whiteflag';
-//var mongoDB = mongoose.connect(mongoURI).connection;
+var mongoURI = 'mongodb://localhost:27017/whiteflag';
+var mongoDB = mongoose.connect(mongoURI).connection;
 
 
-//mongoDB.on('error', function(err){
-//    console.log('You must have angered Mongod. Seek retribution!', err);
-//});
-//
-//mongoDB.once('open', function(){
-//    console.log('Praise be unto Mongod! It Works!');
-//});
+mongoDB.on('error', function(err){
+    console.log('You must have angered Mongod. Seek retribution!', err);
+});
+
+mongoDB.once('open', function(){
+    console.log('Praise be unto Mongod! It Works!');
+});
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -46,7 +43,8 @@ app.use(passport.session());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-app.use('/reactions', Reactions);
+app.use('/options', options);
+
 
 var server = app.listen(3000, function(){
     var port = server.address().port;
@@ -57,7 +55,6 @@ var ClassSchema = require('../models/userModel');
 passport.use(new LocalStrategy(ClassSchema.authenticate()));
 passport.serializeUser(ClassSchema.serializeUser());
 passport.deserializeUser(ClassSchema.deserializeUser());
-
 
 
 module.exports = app;

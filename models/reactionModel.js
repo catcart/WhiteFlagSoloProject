@@ -6,6 +6,6 @@ var reactionSchema = new Schema({
     clicks: []
 });
 
-var Reaction = mongoose.model('Reaction', reactionSchema);
+var reaction = mongoose.model('reaction', reactionSchema);
 
-module.exports = Reaction;
+module.exports = reaction;
