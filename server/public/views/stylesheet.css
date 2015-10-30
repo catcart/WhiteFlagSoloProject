@@ -223,36 +223,52 @@
     height: 420px;
     width: 600px;
     float: left;
-    background-color: rgba(221, 221, 221, 0.5);
+    background-color: rgb(221, 221, 221, 0.5);
 }
 .slowBar {
-    background-color: rgba(253, 255, 57, 0.7);
+    background-color: rgb(253, 255, 57);
     height: 70px;
     width: 600px;
 }
 .connectBar {
-    background-color: rgba(0, 51, 102, 0.7);
+    background-color: rgb(0, 51, 102);
     height: 70px;
     width: 600px;
 
 }
 .repeatBar {
-    background-color: rgba(83, 11, 67, 0.7);
+    background-color: rgb(83, 11, 67);
     height: 70px;
     width: 600px;
 }
 .lostBar {
-    background-color: rgba(213, 60, 9, 0.7);
+    background-color: rgb(213, 60, 9);
     height: 70px;
     width: 600px;
 }
 .breakBar {
-    background-color: rgba(136, 0, 0, 0.7);
+    background-color: rgb(136, 0, 0);
     height: 70px;
     width: 600px;
 }
 .goodBar {
-    background-color: rgba(0, 153, 38, 0.7);
+    background-color: rgb(0, 153, 38);
     height: 70px;
     width: 600px;
+}
+
+.light {
+    opacity: 0.2;
+}
+.medium {
+    opacity: 0.4;
+}
+.heavy {
+    opacity: 0.6;
+}
+.ultraHeavy {
+    opacity: 0.8;
+}
+.full {
+    opacity: 1.0;
 }

@@ -19,6 +19,19 @@ app.controller('optionsController', ['$scope', function($scope){
 
     var color;
 
+    $scope.slowClass = "";
+    $scope.connectClass = "";
+    $scope.repeatClass = "";
+    $scope.lostClass = "";
+    $scope.breakClass = "";
+    $scope.goodClass = "";
+
+    $scope.slowBar = "slowBar";
+    $scope.connectBar = "connectBar";
+    $scope.repeatBar = "repeatBar";
+    $scope.lostBar = "lostBar";
+    $scope.breakBar = "breakBar";
+    $scope.goodBar = "goodBar";
 
     $scope.divSlow = true;
     $scope.divConnect = true;
@@ -60,8 +73,31 @@ app.controller('optionsController', ['$scope', function($scope){
         //return colorMe(clicksSlow);
 
     $scope.countConnect = function(){
+        var clicks = clicksConnect+=1;
+        console.log(clicks);
+        switch (clicks)
+          {
+              case 1 :
+                  $scope.connectClass="light";
+                  break;
+              case 2 :
+                  $scope.connectClass="medium";
+                  break;
+              case 3 :
+                  $scope.connectClass="heavy";
+                  break;
+              case 4 :
+                  $scope.connectClass="ultraHeavy";
+                  break;
+              case (clicks >= 5) :
+                  $scope.connectClass="full";
+                  break;
+
+              default : "light";
+          }
+
+        console.log($scope.connectClass);
         $scope.divConnect = false;
-        countConnect = clicksConnect ++;
         console.log('clicksConnect');
     };
 
@@ -185,4 +221,4 @@ app.controller('optionsController', ['$scope', function($scope){
     //
     //};
 
-module.exports = router;
+//module.exports = router;

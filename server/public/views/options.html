@@ -15,12 +15,12 @@
 
         <div class="options" ng-controller="optionsController">
             <div class="optionsFlag">
-                <div ng-hide="divSlow" class="slowBar">{{colorChoice}}</div>
-                <div ng-hide="divConnect" class="connectBar"></div>
-                <div ng-hide="divRepeat" class="repeatBar"></div>
-                <div ng-hide="divLost" class="lostBar"></div>
-                <div ng-hide="divBreak" class="breakBar"></div>
-                <div ng-hide="divGood" class="goodBar"></div>
+                <div ng-hide="divSlow" ng-class="[slowBar, slowClass]"></div>
+                <div ng-hide="divConnect" ng-class="[connectBar, connectClass]"></div>
+                <div ng-hide="divRepeat" ng-class="[repeatBar, repeatClass]"></div>
+                <div ng-hide="divLost" ng-class="[lostBar, lostClass]"></div>
+                <div ng-hide="divBreak" ng-class="[breakBar, breakClass]"></div>
+                <div ng-hide="divGood" ng-class="[goodBar, goodClass]"></div>
             </div>
 
             <div class="optionsButtons">
