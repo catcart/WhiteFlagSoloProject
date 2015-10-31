@@ -40,37 +40,58 @@ app.controller('optionsController', ['$scope', function($scope){
     $scope.divBreak = true;
     $scope.divGood = true;
 
-    var colorSlow = function() {
-        switch (clicksSlow) {
-            case (1) :
-                color = 'red';
-                break;
-            case (2) :
-                color = 'blue';
-                break;
-            case (3) :
-                color = 'yellow';
-                break;
-            case (4) :
-                color = 'purple';
-                break;
+    //var colorSlow = function() {
+    //    switch (clicksSlow) {
+    //        case (1) :
+    //            color = 'red';
+    //            break;
+    //        case (2) :
+    //            color = 'blue';
+    //            break;
+    //        case (3) :
+    //            color = 'yellow';
+    //            break;
+    //        case (4) :
+    //            color = 'purple';
+    //            break;
+    //
+    //        default :
+    //            color = 'black';
+    //    }
+    //    console.log(color);
+    //};
 
-            default :
-                color = 'black';
-        }
-        console.log(color);
-    };
+
     $scope.countSlow = function(){
         $scope.divSlow = false;
-        countSlow = clicksSlow ++;
+        clicks = clicksSlow +=1;
         console.log('clicksSlow');
-        colorSlow(clicksSlow);
 
+        switch (clicks)
+        {
+            case 1 :
+                $scope.slowClass="light";
+                break;
+            case 2 :
+                $scope.slowClasss="medium";
+                break;
+            case 3 :
+                $scope.slowClass="heavy";
+                break;
+            case 4 :
+                $scope.slowClass="ultraHeavy";
+                break;
+            case (clicks >= 5) :
+                $scope.slowClass="full";
+                break;
+
+            default : "light";
+        }
+
+        console.log($scope.slowClass);
+        $scope.divSlow = false;
+        console.log('clicksSlow');
     };
-
-        //typeSlow = clicktype;
-        //return clickSwitch(typeSlow);
-        //return colorMe(clicksSlow);
 
     $scope.countConnect = function(){
         var clicks = clicksConnect+=1;
@@ -103,29 +124,164 @@ app.controller('optionsController', ['$scope', function($scope){
 
     $scope.countRepeat = function(){
         $scope.divRepeat = false;
-        countRepeat = clicksRepeat ++;
+        clicks = clicksRepeat +=1;
+        console.log('clicksRepeat');
+
+        switch (clicks)
+        {
+            case 1 :
+                $scope.repeatClass="light";
+                break;
+            case 2 :
+                $scope.repeatClasss="medium";
+                break;
+            case 3 :
+                $scope.repeatClass="heavy";
+                break;
+            case 4 :
+                $scope.repeatClass="ultraHeavy";
+                break;
+            case (clicks >= 5) :
+                $scope.repeatClass="full";
+                break;
+
+            default : "light";
+        }
+
+        console.log($scope.repeatClass);
+        $scope.divRepeat = false;
         console.log('clicksRepeat');
     };
 
+
     $scope.countLost = function(){
         $scope.divLost = false;
-        countLost = clicksLost ++;
+        clicks = clicksLost +=1;
+        console.log('clicksLost');
+        switch (clicks)
+        {
+            case 1 :
+                $scope.lostClass="light";
+                break;
+            case 2 :
+                $scope.lostClasss="medium";
+                break;
+            case 3 :
+                $scope.lostClass="heavy";
+                break;
+            case 4 :
+                $scope.lostClass="ultraHeavy";
+                break;
+            case (clicks >= 5) :
+                $scope.lostClass="full";
+                break;
+
+            default : "light";
+        }
+
+        console.log($scope.lostClass);
+        $scope.divLost = false;
         console.log('clicksLost');
     };
 
+
     $scope.countBreak = function(){
         $scope.divBreak = false;
-        countBreak = clicksBreak ++;
+        clicks = clicksBreak +=1;
+        console.log('clicksBreak');
+
+        switch (clicks)
+        {
+            case 1 :
+                $scope.breakClass="light";
+                break;
+            case 2 :
+                $scope.breakClasss="medium";
+                break;
+            case 3 :
+                $scope.breakClass="heavy";
+                break;
+            case 4 :
+                $scope.breakClass="ultraHeavy";
+                break;
+            case (clicks >= 5) :
+                $scope.breakClass="full";
+                break;
+
+            default : "light";
+        }
+
+        console.log($scope.breakClass);
+        $scope.divBreak = false;
+        console.log('clicksBreak');
+        switch (clicks)
+        {
+            case 1 :
+                $scope.slowClass="light";
+                break;
+            case 2 :
+                $scope.slowClasss="medium";
+                break;
+            case 3 :
+                $scope.slowClass="heavy";
+                break;
+            case 4 :
+                $scope.slowClass="ultraHeavy";
+                break;
+            case (clicks >= 5) :
+                $scope.slowClass="full";
+                break;
+
+            default : "light";
+        }
+
+        console.log($scope.breakClass);
+        $scope.divBreak = false;
         console.log('clicksBreak');
     };
 
+
+
     $scope.countGood = function(){
         $scope.divGood = false;
-        countGood = clicksGood ++;
+        clicks = clicksGood +=1;
+        console.log('clicksGood');
+        switch (clicks)
+        {
+            case 1 :
+                $scope.goodClass="light";
+                break;
+            case 2 :
+                $scope.goodClasss="medium";
+                break;
+            case 3 :
+                $scope.goodClass="heavy";
+                break;
+            case 4 :
+                $scope.goodClass="ultraHeavy";
+                break;
+            case (clicks >= 5) :
+                $scope.goodClass="full";
+                break;
+
+            default : "light";
+        }
+
+        console.log($scope.goodClass);
+        $scope.divGood = false;
         console.log('clicksGood');
     };
 
+
     $scope.clearColor = function(){
+
+        clicksSlow = 0;
+        clicksConnect = 0;
+        clicksRepeat = 0;
+        clicksLost = 0;
+        clicksBreak = 0;
+        clicksGood = 0;
+
         $scope.divSlow = true;
         $scope.divConnect = true;
         $scope.divRepeat = true;
